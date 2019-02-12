@@ -1,0 +1,10 @@
+Raducanu Constantin 336CB
+
+	La aceasta tema m-am folosit de functiile de citire si scriere din tema 1 si 
+functia care facea resize-ul pentru factorul de resize de 3. Filtrele le aplicam in ordinea
+in care le primeam, folosind acceasi functie de inmultire a matricilor ca la tema 1, schimband
+doar matricea de baza in functie de filtrul primit.
+	Ideea de paralelizare a fost asemanatoare ca la prima tema unde imparteam dupa linii 
+cat mai optim, si dand ultimului proces si restul imapartiiri.La inceput trimit tuturor proceselor imaginea, iar ele 
+prelucreaza doar partea lor si la final vor trimite doar partea lor prelucrata. Daca sunt mai multe filtre, atunci 
+voi reasambla imaginea si voi retrimite proceselor imaginea reasamblata. Primul proces face doar citirea, scrierea, asamblarea si trimiterea imaginii proceselor, iar celelalte o prelucreaza. Am folosit in special doar functiile de recv si send din api de mpi. 
